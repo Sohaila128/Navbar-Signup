@@ -7,17 +7,17 @@ import { Navbar , Nav , Container } from 'react-bootstrap';
 
 function NavBar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="text-white navbar">
       {/* ... Navbar content ... */}
       <Container>
-      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+       <Link to="/"><Navbar.Brand href="#home" className='text-white'>Assignment 1</Navbar.Brand></Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav"></Navbar.Collapse>
       <Nav className="ms-auto">
-        <Link to="/signup" className="nav-link">
+        <Link to="/signup" className="nav-link text-white">
           Sign Up <BsFillPersonPlusFill className="ms-2" />
         </Link>
-        <Link to="/login" className="nav-link">
+        <Link to="/login" className="nav-link text-white">
           Login <BsFillPersonFill className="ms-2" />
         </Link>
       </Nav>
